@@ -2,29 +2,17 @@ package com.cis.batch33.library.model;
 
 public class Member {
 
-    private Long memberId;
+    private Integer memberId;
     private String firstName;
     private String lastName;
     private String emailAddress;
     private String phoneNumber;
 
-    public Member() {
-        // Default constructor
-    }
-
-    // Constructor without memberId
-    public Member(String firstName, String lastName, String emailAddress, String phoneNumber) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.emailAddress = emailAddress;
-        this.phoneNumber = phoneNumber;
-    }
-
-    public Long getMemberId() {
+    public Integer getMemberId() {
         return memberId;
     }
 
-    public void setMemberId(Long memberId) {
+    public void setMemberId(Integer memberId) {
         this.memberId = memberId;
     }
 
